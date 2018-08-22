@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "CollectViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +22,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[ViewController alloc] init];
+//    self.window.rootViewController = [[CollectViewController alloc] init];
     return YES;
 }
 
